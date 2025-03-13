@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="rejestracja_mobilna.ReloadPage"
+             Title="Strona przeładowana">
+    <VerticalStackLayout>
+        <Frame >
+            <Label 
+                x:Name="ImieLabel"
+                Text="cos tam"/>
+        </Frame>
+        <Frame >
+            <Label 
+        x:Name="NazwiskoLabel"
+        Text="cos tam"/>
+        </Frame>
+        <Frame >
+            <Label 
+        x:Name="HasloLabel"
+        Text="cos tam"/>
+        </Frame>
+        <Frame >
+            <Label 
+        x:Name="WojewodztwoLabel"
+        Text="cos tam"/>
+        </Frame>
+        <Frame >
+            <Label 
+        x:Name="RolaLabel"
+        Text="cos tam"/>
+        </Frame>
+        <Frame >
+            <Label 
+        x:Name="MalolatLabel"
+        Text="cos tam"/>
+        </Frame>
+    </VerticalStackLayout>
+</ContentPage>

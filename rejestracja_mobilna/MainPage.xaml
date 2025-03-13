@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="rejestracja_mobilna.MainPage"
+             BackgroundColor="#ffffff"
+             Padding="20">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="20"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="Center">
+
+        <Label 
+                Text="Rejestracja"
+                FontSize="32"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"
+                TextColor="#4A90E2"/>
+
+        <Frame BackgroundColor="#F5F5F5" CornerRadius="15" Padding="10" HasShadow="True">
+            <Entry x:Name="ImieEntry" Placeholder="Imię" FontSize="18" TextColor="#333" BackgroundColor="#F5F5F5" />
+        </Frame>
+
+        <Frame BackgroundColor="#F5F5F5" CornerRadius="15" Padding="10" HasShadow="True">
+            <Entry x:Name="NazwiskoEntry" Placeholder="Nazwisko" FontSize="18" TextColor="#333" BackgroundColor="#F5F5F5" />
+        </Frame>
+
+        <Frame BackgroundColor="#F5F5F5" CornerRadius="15" Padding="10" HasShadow="True">
+            <Entry x:Name="HasloEntry" Placeholder="Hasło" FontSize="18" IsPassword="True" TextColor="#333" BackgroundColor="#F5F5F5" />
+        </Frame>
+
+        <Frame BackgroundColor="#F5F5F5" CornerRadius="15" Padding="10" HasShadow="True">
+            <Picker 
+                    x:Name="wojewodztwaPicker"
+                    Title="Wybierz województwo" 
+                    HorizontalTextAlignment="Start" 
+                    HorizontalOptions="FillAndExpand" 
+                    Margin="0,5">
+                <Picker.Items>
+                    <x:String>Dolnośląskie</x:String>
+                    <x:String>Kujawsko-Pomorskie</x:String>
+                    <x:String>Lubelskie</x:String>
+                    <x:String>Lubuskie</x:String>
+                    <x:String>Łódzkie</x:String>
+                    <x:String>Małopolskie</x:String>
+                    <x:String>Mazowieckie</x:String>
+                    <x:String>Opolskie</x:String>
+                    <x:String>Podkarpackie</x:String>
+                    <x:String>Podlaskie</x:String>
+                    <x:String>Pomorskie</x:String>
+                    <x:String>Śląskie</x:String>
+                    <x:String>Świętokrzyskie</x:String>
+                    <x:String>Warmińsko-Mazurskie</x:String>
+                    <x:String>Wielkopolskie</x:String>
+                    <x:String>Zachodniopomorskie</x:String>
+                </Picker.Items>
+            </Picker>
+        </Frame>
+
+        <Frame BackgroundColor="#F5F5F5" CornerRadius="15" Padding="10" HasShadow="True">
+            <Picker 
+                    x:Name="rolaPicker"
+                    Title="Wybierz rolę" 
+                    HorizontalTextAlignment="Start" 
+                    HorizontalOptions="FillAndExpand" 
+                    Margin="0,5">
+                <Picker.Items>
+                    <x:String>Admin</x:String>
+                    <x:String>Użytkownik</x:String>
+                    <x:String>Oglądający</x:String>
+                    <x:String>Nikt ważny</x:String>
+                </Picker.Items>
+            </Picker>
+        </Frame>
+
+        <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+            <CheckBox x:Name="ageCheckBox"/>
+            <Label Text="Mam ukończone 18 lat" FontSize="16" TextColor="#333"/>
+        </HorizontalStackLayout>
+
+        <Button Text="Zarejestruj się" 
+                    BackgroundColor="#4CAF50" 
+                    TextColor="White" 
+                    CornerRadius="15" 
+                    Padding="15" 
+                    FontSize="18" 
+                    Clicked="wyslij" />
+
+        <Label x:Name="wynik" FontSize="18" HorizontalOptions="Center" TextColor="#ff0000" />
+    </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
+    
